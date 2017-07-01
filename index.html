@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>SS贪吃蛇</title>
+<style type="text/css">
+#container
+{
+	margin:0px auto;
+	margin-top: 10px;
+	overflow: hidden;
+	min-width:350px;
+}
+#score
+{
+	font-size: 20px;
+	color: black;
+	display: block;
+}
+#stage
+{
+	border: 1px solid red;
+	overflow:hidden;
+	display: block;
+}
+.btn
+{
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 120px;
+	height: 25px;
+}
+</style>
+</head>
+
+<body>
+	<script type="text/javascript" src="SnakeCore.js"></script>
+	<div id="container">
+			<p>贪吃蛇，方向键操作</p>
+			<span id="score">长度：0</span>
+			<canvas id="stage"></canvas>
+			<button id="start_btn" class="btn" onclick="StartGame() ">手动游戏</button>
+			<button id="start_ai_btn" class="btn" onclick="StartAI() ">运行AI</button>
+			<button onclick="GameOver()">停止</button>	
+	</div>
+</body>
+</html>
